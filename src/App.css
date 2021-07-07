@@ -1,38 +1,82 @@
+* {
+  font-family: "Red Hat Text", sans-serif;
+}
+html,
+body,
+#root,
 .App {
-  text-align: center;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background: linear-gradient(
+    hsl(234, 17%, 12%),
+    hsl(235, 16%, 14%),
+    hsl(236, 21%, 26%)
+  );
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  background-image: url(images/bg-stars.svg);
+  position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header,
+.time-left {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  position: relative;
+  top: 20vh;
+}
+h1,
+p {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 1.5em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.time-count {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  color: #fb6087;
+}
+.social-media {
+  background-image: url(images/pattern-hills.svg);
+  background-repeat: no-repeat;
+  height: 197px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  top: 70vh;
+}
+.icons {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 15vh;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.facebook {
+  background-image: url(images/icon-facebook.svg);
+}
+.pinterest {
+  background-image: url(images/icon-pinterest.svg);
+}
+.instagram {
+  background-image: url(images/icon-instagram.svg);
+}
+span.icon.facebook:hover {
+  filter: invert(50%) sepia(83%) saturate(1703%) hue-rotate(310deg)
+    brightness(101%) contrast(97%);
+}
+span.icon.pinterest:hover {
+  filter: invert(50%) sepia(83%) saturate(1703%) hue-rotate(310deg)
+    brightness(101%) contrast(97%);
+}
+span.icon.instagram:hover {
+  filter: invert(50%) sepia(83%) saturate(1703%) hue-rotate(310deg)
+    brightness(101%) contrast(97%);
 }
